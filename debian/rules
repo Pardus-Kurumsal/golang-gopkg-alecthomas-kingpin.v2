@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+export DH_GOPKG := gopkg.in/alecthomas/kingpin.v2
+export DH_GOLANG_EXCLUDES := ${DH_GOPKG}/examples
+export DEB_BUILD_OPTIONS := nocheck
+
+%:
+	dh $@ --buildsystem=golang --with=golang

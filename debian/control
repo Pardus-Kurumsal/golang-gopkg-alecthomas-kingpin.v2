@@ -1,0 +1,19 @@
+Source: golang-gopkg-alecthomas-kingpin.v2
+Section: devel
+Priority: extra
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Build-Depends: debhelper (>= 9),dh-golang, golang-go, golang-github-alecthomas-template-dev,
+ golang-github-alecthomas-units-dev
+Standards-Version: 3.9.5
+Homepage: https://github.com/howeyc/fsnotify.git
+
+Package: golang-gopkg-alecthomas-kingpin.v2-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, golang-github-alecthomas-template-dev,
+Conflicts: golang-kingpin.v2-dev
+Breaks: golang-kingpin.v2-dev
+Provides: golang-kingpin.v2-dev
+ golang-github-alecthomas-units-dev,
+Description: Kingpin is a fluent-style, type-safe command-line parser.
+ Kingpin is a fluent-style, type-safe command-line parser. 
+ It supports flags, nested commands, and positional arguments.
